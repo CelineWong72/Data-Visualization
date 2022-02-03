@@ -49,10 +49,7 @@ class MapWindow(QDialog):
         self.d_df = pd.read_csv(r'C:\Users\User\sampleTutorial\data\map_death.csv')
         self.i_df = pd.read_csv(r'C:\Users\User\sampleTutorial\data\map_infant.csv')
         self.m_df = pd.read_csv(r'C:\Users\User\sampleTutorial\data\map_maternal.csv')
-        # print(self.p_df)
-        # print(self.d_df)
-        # print(self.i_df)
-        # print(self.m_df)
+    
         for_p_map = self.p_df.rename(index=str, columns={'State': 'nam', 'per 1000': 'pop'})
         for_d_map = self.d_df.rename(index=str, columns={'State': 'nam', 'Number of death': 'death'})
         for_i_map = self.i_df.rename(index=str, columns={'State': 'nam', 'Rate': 'rate'})
@@ -60,12 +57,10 @@ class MapWindow(QDialog):
 
         all_data = [for_p_map, for_d_map, for_i_map, for_m_map]
         all_merge = reduce(lambda left, right: pd.merge(left, right, on=['nam'], how='outer'), all_data)
-        # print(all_merge.head())
+     
         self.map_df['state_lowerc'] = self.map_df['nam'].str.lower()
         all_merge['state_lowerc'] = all_merge['nam'].str.lower()
         self.merged = self.map_df.merge(all_merge, on='state_lowerc')
-        # print(self.merged.columns)
-        # print(self.merged.head())
 
     def p_plot(self):
         variable = 'pop_y'
