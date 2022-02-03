@@ -24,12 +24,9 @@ demography?
 
 ## Features
 ------------------
-- Standard transformation features (Translate, Rotate, Scale) 
-- Magnifier (Zoom in and Zoom out) 
-- Dataset information 
-- 3D axis 
-- 3D bounding box 
-- Multiple window
+- Tabbed Window
+- Dashboard (1-Population and Death, 2-Life Expectancy, Infant And Maternal Mortality, etc.)
+- Malaysia Map Visualization
 
 
 ## Dataset
@@ -49,4 +46,6 @@ Malaysia's Population and Demographic Statistics in 2015 <br />
 
 ## Screenshot
 ------------------
-<img src="https://github.com/CelineWong72/DICOM_Visualization/blob/f08f5519bb247c6adde74305b4d8f7aea16a5ba7/outputs/ass1_mainapp.PNG" width="500" height="300">
+<img src="output/ass2_mainapp.PNG" width="500" height="300">
+<img src="output/ass2_load1.PNG" width="500" height="300">
+<img src="output/ass2_load2.PNG" width="500" height="300">
