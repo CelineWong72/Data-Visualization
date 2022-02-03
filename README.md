@@ -3,7 +3,7 @@ SW40103 Assignment 3
 
 ## Motivation
 ------------------
-To get exposure on data visualization using Numpy, Pandas, and Matplotlib/Seaborn/Plotnine.
+To get exposure on data visualization using Numpy, Pandas, and Matplotlib/Seaborn/Plotnine. <br />
 To create a full dashboard based on the task and criteria given.
 
 
