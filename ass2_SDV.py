@@ -231,21 +231,8 @@ class MainDash(QDialog):
         rankk['mean'] = rankk.mean(axis=1)
         rankk = rankk.sort_values(by=['mean'], ascending=True)
         rankk['Rank'] = rankk['mean'].rank(ascending=True).astype(int)
-        # print(rankk)
-
-        # ax12 = self.figure.add_subplot(236)
-        # ranking_table = rankk.pivot('State', 'Population rank', 'Rank')
-        # # # ax9.set_xlabel('Ethnic Group')
-        # # # ax9.set_ylabel('Sex')
-        # ax12.set_title('States Ranking')
-        # sns.heatmap(ranking_table, ax=ax12, annot=True, fmt="d", linewidths=.5, square=True, cmap='Blues_r')
-        # print(ranking_table)
 
         ax12 = self.figure.add_subplot(236)
-        # rank_sort = rankk.sort_values(by='Rank', ascending=True)
-        # rank_sort = pd.DataFrame(rank_sort.to_records())
-        # x = rank_sort['State']
-        # y = rank_sort['Rank']
         x = rankk['State']
         y = rankk['Rank']
         ax12.barh(x, y, color='steelblue')
