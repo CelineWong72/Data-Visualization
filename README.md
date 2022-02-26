@@ -1,4 +1,4 @@
-# Data_Visualization
+# Data-Visualization
 SW40103 Assignment 3
 
 ## Motivation
